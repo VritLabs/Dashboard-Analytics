@@ -3,20 +3,43 @@ import { AppBar, Toolbar, Typography, Link, Box } from "@mui/material";
 
 const Footer = () => {
     return (
-        <AppBar position="static" color="primary">
+        <AppBar
+            position="static"
+            style={{ backgroundColor: "grey", bottom: "0" }}
+        >
             <Toolbar>
                 <Box display="flex" flexGrow={1}>
                     <Typography variant="body2">
-                        <Link href="#">Support</Link>
+                        <Link
+                            href="#"
+                            style={{ color: "black", marginRight: "16px" }}
+                        >
+                            Support
+                        </Link>
                     </Typography>
                     <Typography variant="body2">
-                        <Link href="#">Help Center</Link>
+                        <Link
+                            href="#"
+                            style={{ color: "black", marginRight: "16px" }}
+                        >
+                            Help Center
+                        </Link>
                     </Typography>
                     <Typography variant="body2">
-                        <Link href="#">Privacy</Link>
+                        <Link
+                            href="#"
+                            style={{ color: "black", marginRight: "16px" }}
+                        >
+                            Privacy
+                        </Link>
                     </Typography>
                     <Typography variant="body2">
-                        <Link href="#">Terms of Service</Link>
+                        <Link
+                            href="#"
+                            style={{ color: "black", marginRight: "16px" }}
+                        >
+                            Terms of Service
+                        </Link>
                     </Typography>
                 </Box>
                 <Typography variant="body2" align="right">

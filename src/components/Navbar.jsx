@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     AppBar,
     Toolbar,
-    Typography,
     InputBase,
     IconButton,
     Badge,
     Tooltip,
+    Box,
 } from "@mui/material";
 import {
     Search,
@@ -17,60 +17,88 @@ import {
 } from "@mui/icons-material";
 
 const Navbar = () => {
+    const [isSearchBarHovered, setIsSearchBarHovered] = useState(false);
+
+    const handleSearchBarMouseEnter = () => {
+        setIsSearchBarHovered(true);
+    };
+
+    const handleSearchBarMouseLeave = () => {
+        setIsSearchBarHovered(false);
+    };
+
     return (
-        <AppBar position="static" style={{ backgroundColor: "grey" }}>
+        <AppBar
+            position="static"
+            style={{ backgroundColor: "white", minHeight: "64px" }}
+        >
             <Toolbar>
-                <Typography variant="h6" noWrap>
-                    My App
-                </Typography>
-
-                <div style={{ flexGrow: 1 }} />
-
-                <div style={{ display: "flex", alignItems: "center" }}>
+                <Box
+                    flexGrow={1}
+                    display="flex"
+                    justifyContent="flex-start"
+                    alignItems="center"
+                >
                     <div
                         style={{
                             display: "flex",
                             alignItems: "center",
-                            marginRight: "500px",
+                            marginRight: "20px",
                             border: "1px solid white",
                             borderRadius: "5px",
+                            backgroundColor: isSearchBarHovered
+                                ? "lightgray"
+                                : "white",
                         }}
+                        onMouseEnter={handleSearchBarMouseEnter}
+                        onMouseLeave={handleSearchBarMouseLeave}
                     >
-                        <Search />
+                        <Search
+                            style={{
+                                marginRight: "1px",
+                                fontSize: "1.5rem",
+                                color: "#f5f5ef",
+                            }}
+                        />
                         <InputBase
-                            placeholder="Search..."
-                            style={{ width: "300px", marginLeft: 8 }}
+                            placeholder="Search topics"
+                            style={{
+                                width: "300px",
+                                padding: "10px 10px 10px 4px",
+                            }}
                         />
                     </div>
+                </Box>
 
+                <Box display="flex" alignItems="center">
                     <Tooltip title="Messages" placement="bottom">
                         <IconButton color="inherit">
-                            <Badge badgeContent={4} color="error">
-                                <Mail />
+                            <Badge badgeContent={4} color="primary">
+                                <Mail style={{ color: "gray" }} />
                             </Badge>
                         </IconButton>
                     </Tooltip>
 
                     <Tooltip title="Notifications" placement="bottom">
                         <IconButton color="inherit">
-                            <Badge badgeContent={2} color="error">
-                                <Notifications />
+                            <Badge badgeContent={2} color="primary">
+                                <Notifications style={{ color: "gray" }} />
                             </Badge>
                         </IconButton>
                     </Tooltip>
 
                     <Tooltip title="Language" placement="bottom">
                         <IconButton color="inherit">
-                            <Language />
+                            <Language style={{ color: "gray" }} />
                         </IconButton>
                     </Tooltip>
 
                     <Tooltip title="Power" placement="bottom">
                         <IconButton color="inherit">
-                            <PowerSettingsNew />
+                            <PowerSettingsNew style={{ color: "gray" }} />
                         </IconButton>
                     </Tooltip>
-                </div>
+                </Box>
             </Toolbar>
         </AppBar>
     );

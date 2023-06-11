@@ -27,14 +27,15 @@ const Title = () => {
         <div
             style={{
                 Padding: "50px",
-                paddingLeft: "50px",
+                paddingLeft: "70px",
                 color: "white",
-                backgroundColor: "#2c3e50",
+                backgroundColor: "rgb(71, 130, 218)",
                 height: "63px",
                 fontSize: "30px",
+                marginTop: "10px",
             }}
         >
-            Title
+            My App
         </div>
     );
 };
@@ -50,7 +51,7 @@ const Sidebar = () => {
         <div
             style={{
                 width: "300px",
-                backgroundColor: "#2c3e50",
+                backgroundColor: "rgb(71, 130, 218)",
                 color: "white",
             }}
         >
@@ -60,16 +61,17 @@ const Sidebar = () => {
                     style={{
                         marginTop: "30px",
                         marginBottom: "10px",
-                        paddingLeft: "40px",
-                        backgroundColor: "#2c3e50",
+                        paddingLeft: "20px",
+                        backgroundColor: "rgb(71, 130, 218)",
                         color: "white",
                     }}
                 >
-                    Pages
+                    PAGES
                 </div>
                 <Accordion
                     expanded={expandedAccordion === "dashboard"}
                     onChange={handleAccordionChange("dashboard")}
+                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                         <DashboardIcon />
@@ -77,7 +79,10 @@ const Sidebar = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         <div
-                            style={{ display: "flex", flexDirection: "column" }}
+                            style={{
+                                display: "flex",
+                                flexDirection: "column",
+                            }}
                         >
                             <div style={{ padding: "8px 16px 8px 19px" }}>
                                 <Link href="#">Default</Link>
@@ -95,6 +100,7 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "pages"}
                     onChange={handleAccordionChange("pages")}
+                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                         <PagesIcon />
@@ -127,6 +133,7 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "invoices"}
                     onChange={handleAccordionChange("invoices")}
+                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                         <InvoicesIcon />
@@ -150,6 +157,7 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "auth"}
                     onChange={handleAccordionChange("auth")}
+                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                         <AuthIcon />
@@ -183,7 +191,7 @@ const Sidebar = () => {
                     style={{
                         marginTop: "25px",
                         marginBottom: "10px",
-                        paddingLeft: "40px",
+                        paddingLeft: "20px",
                     }}
                 >
                     ELEMENTS
@@ -191,6 +199,7 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "components"}
                     onChange={handleAccordionChange("components")}
+                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                         <ComponentsIcon />
@@ -248,6 +257,7 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "charts"}
                     onChange={handleAccordionChange("charts")}
+                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                         <ChartsIcon />
@@ -266,10 +276,11 @@ const Sidebar = () => {
                         </div>
                     </AccordionDetails>
                 </Accordion>
-                {/* Repeat the same structure for forms, tables, icons, and maps */}
+
                 <Accordion
                     expanded={expandedAccordion === "forms"}
                     onChange={handleAccordionChange("forms")}
+                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                         <FormsIcon />
@@ -303,6 +314,7 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "tables"}
                     onChange={handleAccordionChange("tables")}
+                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                         <TablesIcon />
@@ -327,6 +339,7 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "icons"}
                     onChange={handleAccordionChange("icons")}
+                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                         <IconsIcon />
@@ -348,6 +361,7 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "maps"}
                     onChange={handleAccordionChange("maps")}
+                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                         <MapsIcon />
@@ -373,22 +387,41 @@ const Sidebar = () => {
                         marginTop: "25px",
                         marginBottom: "10px",
                         paddingLeft: "40px",
-                        backgroundColor: "#2c3e50",
+                        backgroundColor: "rgb(71, 130, 218)",
                         color: "white",
+                        fontSize: "14px",
                     }}
                 >
                     My App Pro
                 </div>
-                <div style={{ display: "flex", alignItems: "center" }}>
+                <div
+                    style={{
+                        display: "flex",
+                        alignItems: "center",
+                        backgroundColor: "rgb(71, 130, 218)",
+                        paddingLeft: "12px",
+                    }}
+                >
                     <DocumentationIcon />
-                    <div style={{ padding: " 8px 16px 8px 19px" }}>
-                        <Link href="#">Documentation</Link>
+                    <div style={{ padding: " 8px 16px 8px 16px" }}>
+                        <Link style={{ color: "black" }} href="#">
+                            Documentation
+                        </Link>
                     </div>
                 </div>
-                <div style={{ display: "flex", alignItems: "center" }}>
+                <div
+                    style={{
+                        display: "flex",
+                        alignItems: "center",
+                        backgroundColor: "rgb(71, 130, 218)",
+                        paddingLeft: "12px",
+                    }}
+                >
                     <ChangeLogIcon />
-                    <div style={{ padding: " 8px 16px 8px 19px" }}>
-                        <Link href="#">Changelog</Link>
+                    <div style={{ padding: " 8px 16px 8px 16px" }}>
+                        <Link style={{ color: "black" }} href="#">
+                            Changelog
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -5,14 +5,18 @@ const Footer = () => {
     return (
         <AppBar
             position="static"
-            style={{ backgroundColor: "grey", bottom: "0" }}
+            style={{ backgroundColor: "white", marginBottom: "0" }}
         >
             <Toolbar>
                 <Box display="flex" flexGrow={1}>
                     <Typography variant="body2">
                         <Link
                             href="#"
-                            style={{ color: "black", marginRight: "16px" }}
+                            style={{
+                                color: "gray",
+                                marginRight: "16px",
+                                textDecoration: "none",
+                            }}
                         >
                             Support
                         </Link>
@@ -20,7 +24,11 @@ const Footer = () => {
                     <Typography variant="body2">
                         <Link
                             href="#"
-                            style={{ color: "black", marginRight: "16px" }}
+                            style={{
+                                color: "gray",
+                                marginRight: "16px",
+                                textDecoration: "none",
+                            }}
                         >
                             Help Center
                         </Link>
@@ -28,7 +36,11 @@ const Footer = () => {
                     <Typography variant="body2">
                         <Link
                             href="#"
-                            style={{ color: "black", marginRight: "16px" }}
+                            style={{
+                                color: "gray",
+                                marginRight: "16px",
+                                textDecoration: "none",
+                            }}
                         >
                             Privacy
                         </Link>
@@ -36,13 +48,21 @@ const Footer = () => {
                     <Typography variant="body2">
                         <Link
                             href="#"
-                            style={{ color: "black", marginRight: "16px" }}
+                            style={{
+                                color: "gray",
+                                marginRight: "16px",
+                                textDecoration: "none",
+                            }}
                         >
                             Terms of Service
                         </Link>
                     </Typography>
                 </Box>
-                <Typography variant="body2" align="right">
+                <Typography
+                    variant="body2"
+                    align="right"
+                    style={{ color: "gray" }}
+                >
                     &copy; {new Date().getFullYear()} Your Company Name
                 </Typography>
             </Toolbar>

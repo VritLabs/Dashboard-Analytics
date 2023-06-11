@@ -1,8 +1,9 @@
 import React from "react";
-
 const Body = () => {
     return (
-        <div style={{ height: "90vh", backgroundColor: "lightgray" }}>Body</div>
+        <div style={{ height: "90vh", backgroundColor: "lightgray" }}>
+            <div>BODY</div>
+        </div>
     );
 };
 

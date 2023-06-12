@@ -117,21 +117,24 @@ const ColorButton = ({ onColorChange }) => {
                                 <div
                                     key={option.name}
                                     style={{
-                                        width: "calc(50% - 15px)",
-                                        height: "3cm",
-                                        marginBottom: "20px",
+                                        width: "1cm",
+                                        height: "2.5cm",
+                                        marginBottom: "10px",
+                                        flexBasis: "calc(50% - 8px)",
+                                        flexGrow: 0,
                                     }}
                                 >
                                     <div
                                         style={{
-                                            width: "100%",
-                                            height: "100%",
+                                            width: "80%",
+                                            height: "80%",
                                             backgroundColor: "#fff",
                                             border: "1px solid gray",
                                             borderRadius: "0.3rem",
                                             display: "flex",
                                             justifyContent: "center",
                                             alignItems: "center",
+                                            cursor: "pointer",
                                         }}
                                     >
                                         <div
@@ -152,6 +155,7 @@ const ColorButton = ({ onColorChange }) => {
                                             justifyContent: "center",
                                             alignItems: "center",
                                             height: "2.4rem", // Adjust the height as needed
+                                            paddingRight: "1rem",
                                         }}
                                     >
                                         {option.name}

@@ -6,28 +6,27 @@ import Sidebar from "./components/Sidebar";
 import ColorButton from "./components/ColorButton";
 
 const App = () => {
-    const [selectedColor, setSelectedColor] = useState(null);
+    const [sidebarColor, setSidebarColor] = useState(null);
 
     const handleColorChange = (color) => {
-        setSelectedColor(color);
-        document.body.style.backgroundColor = color;
+        setSidebarColor(color);
     };
 
     return (
         <div style={{ display: "flex", height: "100vh", bottom: "0" }}>
-            <Sidebar />
+            <Sidebar backgroundColor={sidebarColor} />
 
             <div
                 style={{ display: "flex", flexDirection: "column", flex: "1" }}
             >
                 <div style={{ flex: "1" }}>
-                    <Navbar color={selectedColor} />
-                    <Body color={selectedColor} />
+                    <Navbar />
+                    <Body />
                 </div>
                 <div style={{ position: "sticky", bottom: "0" }}>
                     <ColorButton onColorChange={handleColorChange} />
                 </div>
-                <Footer color={selectedColor} />
+                <Footer />
             </div>
         </div>
     );

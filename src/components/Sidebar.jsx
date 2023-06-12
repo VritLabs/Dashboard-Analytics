@@ -29,7 +29,7 @@ const Title = () => {
                 Padding: "50px",
                 paddingLeft: "70px",
                 color: "white",
-                backgroundColor: "rgb(71, 130, 218)",
+                backgroundColor: "rgb(35, 48, 63)",
                 height: "63px",
                 fontSize: "30px",
                 marginTop: "10px",
@@ -51,7 +51,7 @@ const Sidebar = () => {
         <div
             style={{
                 width: "300px",
-                backgroundColor: "rgb(71, 130, 218)",
+                backgroundColor: "rgb(35, 48, 63)",
                 color: "white",
             }}
         >
@@ -62,7 +62,7 @@ const Sidebar = () => {
                         marginTop: "30px",
                         marginBottom: "10px",
                         paddingLeft: "20px",
-                        backgroundColor: "rgb(71, 130, 218)",
+                        backgroundColor: "rgb(35, 48, 63)",
                         color: "white",
                     }}
                 >
@@ -71,11 +71,21 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "dashboard"}
                     onChange={handleAccordionChange("dashboard")}
-                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
+                    style={{
+                        backgroundColor: "rgb(35, 48, 63)",
+                    }}
                 >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <DashboardIcon />
-                        <Typography>Dashboard</Typography>
+                    <AccordionSummary
+                        expandIcon={
+                            <ExpandMoreIcon style={{ color: "gray" }} />
+                        }
+                    >
+                        <DashboardIcon style={{ color: "gray" }} />
+                        <Typography
+                            style={{ color: "white", marginLeft: "7px" }}
+                        >
+                            Dashboard
+                        </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div
@@ -84,14 +94,48 @@ const Sidebar = () => {
                                 flexDirection: "column",
                             }}
                         >
-                            <div style={{ padding: "8px 16px 8px 19px" }}>
-                                <Link href="#">Default</Link>
+                            <div
+                                style={{
+                                    padding: "8px 16px 8px 19px",
+                                }}
+                            >
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Default
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Analytics</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Analytics
+                                </Link>
                             </div>
                             <div style={{ padding: "8px 16px 8px 19px" }}>
-                                <Link href="#">SaaS</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    SaaS
+                                </Link>
                             </div>
                         </div>
                     </AccordionDetails>
@@ -100,30 +144,88 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "pages"}
                     onChange={handleAccordionChange("pages")}
-                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
+                    style={{ backgroundColor: "rgb(35, 48, 63)" }}
                 >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <PagesIcon />
-                        <Typography>Pages</Typography>
+                    <AccordionSummary
+                        expandIcon={
+                            <ExpandMoreIcon style={{ color: "gray" }} />
+                        }
+                    >
+                        <PagesIcon style={{ color: "gray" }} />
+                        <Typography
+                            style={{ color: "white", marginLeft: "7px" }}
+                        >
+                            Pages
+                        </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div
                             style={{ display: "flex", flexDirection: "column" }}
                         >
                             <div style={{ padding: "8px 16px 8px 19px" }}>
-                                <Link href="#">Profiles</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Profiles
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Settings</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Settings
+                                </Link>
                             </div>
                             <div style={{ padding: "8px 16px 8px 19px" }}>
-                                <Link href="#">Pricing</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Pricing
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Chat</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Chat
+                                </Link>
                             </div>
                             <div style={{ padding: "8px 16px 8px 19px" }}>
-                                <Link href="#">Blank Page</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Blank Page
+                                </Link>
                             </div>
                         </div>
                     </AccordionDetails>
@@ -133,21 +235,55 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "invoices"}
                     onChange={handleAccordionChange("invoices")}
-                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
+                    style={{ backgroundColor: "rgb(35, 48, 63)" }}
                 >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <InvoicesIcon />
-                        <Typography>Invoices</Typography>
+                    <AccordionSummary
+                        expandIcon={
+                            <ExpandMoreIcon style={{ color: "gray" }} />
+                        }
+                        style={{
+                            color: "gray",
+                            textDecoration: "none",
+                            paddingLeft: "15px",
+                            fontSize: "16px",
+                        }}
+                    >
+                        <InvoicesIcon style={{ color: "gray" }} />
+                        <Typography
+                            style={{ color: "white", marginLeft: "7px" }}
+                        >
+                            Invoices
+                        </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div
                             style={{ display: "flex", flexDirection: "column" }}
                         >
                             <div style={{ padding: "8px 16px 8px 19px" }}>
-                                <Link href="#">List</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    List
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Detail</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Detail
+                                </Link>
                             </div>
                         </div>
                     </AccordionDetails>
@@ -157,30 +293,88 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "auth"}
                     onChange={handleAccordionChange("auth")}
-                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
+                    style={{ backgroundColor: "rgb(35, 48, 63)" }}
                 >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <AuthIcon />
-                        <Typography>Auth</Typography>
+                    <AccordionSummary
+                        expandIcon={
+                            <ExpandMoreIcon style={{ color: "gray" }} />
+                        }
+                    >
+                        <AuthIcon style={{ color: "gray" }} />
+                        <Typography
+                            style={{ color: "white", marginLeft: "7px" }}
+                        >
+                            Auth
+                        </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div
                             style={{ display: "flex", flexDirection: "column" }}
                         >
                             <div style={{ padding: "8px 16px 8px 19px" }}>
-                                <Link href="#">Sign In</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Sign In
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Sign Up</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Sign Up
+                                </Link>
                             </div>
                             <div style={{ padding: "8px 16px 8px 19px" }}>
-                                <Link href="#">Reset Pages</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Reset Pages
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">404 Page</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    404 Page
+                                </Link>
                             </div>
                             <div style={{ padding: "8px 16px 8px 19px" }}>
-                                <Link href="#">500 Page</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    500 Page
+                                </Link>
                             </div>
                         </div>
                     </AccordionDetails>
@@ -199,57 +393,205 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "components"}
                     onChange={handleAccordionChange("components")}
-                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
+                    style={{ backgroundColor: "rgb(35, 48, 63)" }}
                 >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <ComponentsIcon />
-                        <Typography>Components</Typography>
+                    <AccordionSummary
+                        expandIcon={
+                            <ExpandMoreIcon style={{ color: "gray" }} />
+                        }
+                    >
+                        <ComponentsIcon style={{ color: "gray" }} />
+                        <Typography
+                            style={{ color: "white", marginLeft: "7px" }}
+                        >
+                            Components
+                        </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div
                             style={{ display: "flex", flexDirection: "column" }}
                         >
                             <div style={{ padding: "8px 16px 8px 19px" }}>
-                                <Link href="#">Alerts</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Alerts
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Accordion</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Accordion
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Avatar</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Avatar
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Badges</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Badges
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Buttons</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Buttons
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Cards</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Cards
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Chips</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Chips
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Dialogs</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Dialogs
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Lists</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Lists
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Menus</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Menus
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Pagination</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Pagination
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Progress</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Progress
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Snakbars</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Snakbars
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Tooltips</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Tooltips
+                                </Link>
                             </div>
                         </div>
                     </AccordionDetails>
@@ -257,21 +599,49 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "charts"}
                     onChange={handleAccordionChange("charts")}
-                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
+                    style={{ backgroundColor: "rgb(35, 48, 63)" }}
                 >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <ChartsIcon />
-                        <Typography>Charts</Typography>
+                    <AccordionSummary
+                        expandIcon={
+                            <ExpandMoreIcon style={{ color: "gray" }} />
+                        }
+                    >
+                        <ChartsIcon style={{ color: "gray" }} />
+                        <Typography
+                            style={{ color: "white", marginLeft: "7px" }}
+                        >
+                            Charts
+                        </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div
                             style={{ display: "flex", flexDirection: "column" }}
                         >
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Chart.js</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Chart.js
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">ApexCharts</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    ApexCharts
+                                </Link>
                             </div>
                         </div>
                     </AccordionDetails>
@@ -280,33 +650,101 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "forms"}
                     onChange={handleAccordionChange("forms")}
-                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
+                    style={{ backgroundColor: "rgb(35, 48, 63)" }}
                 >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <FormsIcon />
-                        <Typography>Forms</Typography>
+                    <AccordionSummary
+                        expandIcon={
+                            <ExpandMoreIcon style={{ color: "gray" }} />
+                        }
+                    >
+                        <FormsIcon style={{ color: "gray" }} />
+                        <Typography
+                            style={{ color: "white", marginLeft: "7px" }}
+                        >
+                            Forms
+                        </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div
                             style={{ display: "flex", flexDirection: "column" }}
                         >
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Pickers</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Pickers
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Selection Controls</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Selection Controls
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Selects</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Selects
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Text Fields</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Text Fields
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Editors</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Editors
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Formik</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Formik
+                                </Link>
                             </div>
                         </div>
                     </AccordionDetails>
@@ -314,24 +752,62 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "tables"}
                     onChange={handleAccordionChange("tables")}
-                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
+                    style={{ backgroundColor: "rgb(35, 48, 63)" }}
                 >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <TablesIcon />
-                        <Typography>Tables</Typography>
+                    <AccordionSummary
+                        expandIcon={
+                            <ExpandMoreIcon style={{ color: "gray" }} />
+                        }
+                    >
+                        <TablesIcon style={{ color: "gray" }} />
+                        <Typography
+                            style={{ color: "white", marginLeft: "7px" }}
+                        >
+                            Tables
+                        </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div
                             style={{ display: "flex", flexDirection: "column" }}
                         >
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Simple Table</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Simple Table
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Advanced Table</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Advanced Table
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Data Grid</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Data Grid
+                                </Link>
                             </div>
                         </div>
                     </AccordionDetails>
@@ -339,21 +815,49 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "icons"}
                     onChange={handleAccordionChange("icons")}
-                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
+                    style={{ backgroundColor: "rgb(35, 48, 63)" }}
                 >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <IconsIcon />
-                        <Typography>Icons</Typography>
+                    <AccordionSummary
+                        expandIcon={
+                            <ExpandMoreIcon style={{ color: "gray" }} />
+                        }
+                    >
+                        <IconsIcon style={{ color: "gray" }} />
+                        <Typography
+                            style={{ color: "white", marginLeft: "7px" }}
+                        >
+                            Icons
+                        </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div
                             style={{ display: "flex", flexDirection: "column" }}
                         >
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Material Icons</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Material Icons
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Feather Icons</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Feather Icons
+                                </Link>
                             </div>
                         </div>
                     </AccordionDetails>
@@ -361,21 +865,49 @@ const Sidebar = () => {
                 <Accordion
                     expanded={expandedAccordion === "maps"}
                     onChange={handleAccordionChange("maps")}
-                    style={{ backgroundColor: "rgb(71, 130, 218)" }}
+                    style={{ backgroundColor: "rgb(35, 48, 63)" }}
                 >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <MapsIcon />
-                        <Typography>Maps</Typography>
+                    <AccordionSummary
+                        expandIcon={
+                            <ExpandMoreIcon style={{ color: "gray" }} />
+                        }
+                    >
+                        <MapsIcon style={{ color: "gray" }} />
+                        <Typography
+                            style={{ color: "white", marginLeft: "7px" }}
+                        >
+                            Maps
+                        </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div
                             style={{ display: "flex", flexDirection: "column" }}
                         >
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Google Maps</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Google Maps
+                                </Link>
                             </div>
                             <div style={{ padding: " 8px 16px 8px 19px" }}>
-                                <Link href="#">Vector Maps</Link>
+                                <Link
+                                    style={{
+                                        color: "gray",
+                                        textDecoration: "none",
+                                        paddingLeft: "15px",
+                                        fontSize: "16px",
+                                    }}
+                                    href="#"
+                                >
+                                    Vector Maps
+                                </Link>
                             </div>
                         </div>
                     </AccordionDetails>
@@ -384,27 +916,25 @@ const Sidebar = () => {
             <div>
                 <div
                     style={{
-                        marginTop: "25px",
-                        marginBottom: "10px",
-                        paddingLeft: "40px",
-                        backgroundColor: "rgb(71, 130, 218)",
+                        padding: "20px 0px 10px 20px",
+                        backgroundColor: "rgb(35, 48, 63)",
                         color: "white",
                         fontSize: "14px",
                     }}
                 >
-                    My App Pro
+                    MY APP PRO
                 </div>
                 <div
                     style={{
                         display: "flex",
                         alignItems: "center",
-                        backgroundColor: "rgb(71, 130, 218)",
+                        backgroundColor: "rgb(35, 48, 63)",
                         paddingLeft: "12px",
                     }}
                 >
-                    <DocumentationIcon />
+                    <DocumentationIcon style={{ color: "gray" }} />
                     <div style={{ padding: " 8px 16px 8px 16px" }}>
-                        <Link style={{ color: "black" }} href="#">
+                        <Link style={{ color: "white" }} href="#">
                             Documentation
                         </Link>
                     </div>
@@ -413,13 +943,13 @@ const Sidebar = () => {
                     style={{
                         display: "flex",
                         alignItems: "center",
-                        backgroundColor: "rgb(71, 130, 218)",
+                        backgroundColor: "rgb(35, 48, 63)",
                         paddingLeft: "12px",
                     }}
                 >
-                    <ChangeLogIcon />
+                    <ChangeLogIcon style={{ color: "gray" }} />
                     <div style={{ padding: " 8px 16px 8px 16px" }}>
-                        <Link style={{ color: "black" }} href="#">
+                        <Link style={{ color: "white" }} href="#">
                             Changelog
                         </Link>
                     </div>
